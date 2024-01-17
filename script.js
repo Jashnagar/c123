@@ -3,11 +3,11 @@ function setup()
    video = createCapture(VIDEO);
    video.size(550,500);
 
-   canvas = createCanvas(550,420);
+   canvas = createCanvas(600,420);
    canvas.position(590,110);
 
    poseNet = ml5.poseNet(video, modelLoaded);
-   pesNet.on('pose',gotPoses);
+   poseNet.on('pose',gotPoses);
 }
 function draw()
 {
